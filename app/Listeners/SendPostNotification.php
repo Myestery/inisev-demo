@@ -3,8 +3,9 @@
 namespace App\Listeners;
 
 use App\Events\NewWebsitePost;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendPostNotification implements ShouldQueue
 {
